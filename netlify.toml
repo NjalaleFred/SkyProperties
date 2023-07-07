@@ -1,0 +1,54 @@
+[[redirects]]
+  from = "/signup"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/buyer/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/buyer/favorites"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/buyer/buyers_profile"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/buyer/buyers_home"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sellers/:id/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sellers/:id/add_property"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sellers/:id/sellers_profile"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sellers/:id/sellers_home"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200

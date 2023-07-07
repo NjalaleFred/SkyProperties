@@ -43,7 +43,7 @@ export const Buyer = ({ user, setUser }) => {
             <Profile user={user} />
           </Route>
           <Route exact path="/buyer/buyers_home">
-            <BuyersHomePage property={property}/>
+            <BuyersHomePage property={property} user={user}/>
           </Route>
         </Switch>
       </div>

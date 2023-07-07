@@ -1,0 +1,34 @@
+# Redirect routes for the React app
+
+# Redirect /signup to the SignUpPage component
+/signup     /index.html   200
+
+# Redirect /login to the LoginPage component
+/login      /index.html   200
+
+# Redirect /buyer and its sub-routes to the Buyer component
+/buyer/*    /index.html   200
+
+# Redirect /buyer/favorites to the Favorites component
+/buyer/favorites    /index.html   200
+
+# Redirect /buyer/buyers_profile to the Profile component
+/buyer/buyers_profile    /index.html   200
+
+# Redirect /buyer/buyers_home to the BuyersHomePage component
+/buyer/buyers_home    /index.html   200
+
+# Redirect /sellers/:id/* to the Seller component
+/sellers/:id/*    /index.html   200
+
+# Redirect /sellers/:id/add_property to the AddProperty component
+/sellers/:id/add_property    /index.html   200
+
+# Redirect /sellers/:id/sellers_profile to the Profile component
+/sellers/:id/sellers_profile    /index.html   200
+
+# Redirect /sellers/:id/sellers_home to the SellersHomePage component
+/sellers/:id/sellers_home    /index.html   200
+
+# Redirect root path "/" to the LandingHome component
+/    /index.html   200
