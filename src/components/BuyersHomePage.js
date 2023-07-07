@@ -4,7 +4,6 @@ function BuyersHomePage({ property }) {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("");
-  const [estate, setEstate] = useState("");
 
   const toggleModal = (selectedProperty) => {
     setSelectedProperty(selectedProperty);
