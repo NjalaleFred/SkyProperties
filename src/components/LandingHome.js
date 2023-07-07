@@ -41,21 +41,21 @@ const ButtonWrapper = styled.div`
   margin-bottom: 20px;
 `;
 
-const Button = styled.button`
-  margin-right: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ffffff;
-  color: #333333;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+// const Button = styled.button`
+//   margin-right: 10px;
+//   padding: 10px 20px;
+//   font-size: 16px;
+//   background-color: #ffffff;
+//   color: #333333;
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
   
-  &:hover {
-    background-color: #eeeeee;
-  }
-`;
+//   &:hover {
+//     background-color: #eeeeee;
+//   }
+// `;
 
 const LandingHome = () => {
   return (
