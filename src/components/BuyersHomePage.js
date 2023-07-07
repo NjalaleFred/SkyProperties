@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function BuyersHomePage({ property, user }) {
+function BuyersHomePage({ property }) {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("");
@@ -26,30 +26,6 @@ function BuyersHomePage({ property, user }) {
   const handleSort = (e) => {
     setSortBy(e.target.value);
   };
-
-  const handleAddFavorite =({id}) => {
-    fetch("/favorites",{
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        buyer_id: user.buyer_id,
-        property_id: id,
-      }),
-    })
-    .then(response => {
-      // Handle the response from the server
-      if (response.ok) {
-        // Update the state if successful
-        alert("Property has been added to your favorites")      
-      } 
-      else {
-        // Handle error if needed
-        alert('Error adding property to favorites');
-      }
-    });
-  }
 
   const sortProperties = (properties) => {
     switch (sortBy) {
@@ -91,9 +67,6 @@ function BuyersHomePage({ property, user }) {
         <p>Bedrooms: {house.bedrooms}</p>
         <p>Bathrooms: {house.bathrooms}</p>
         <div className="modal-wrapper">
-          {/* <button onClick={()=> handleAddFavorite(house.id)}>
-            Add To Favorite
-          </button> */}
           <button onClick={() => toggleModal(house)}>
             Sellers Information
           </button>
